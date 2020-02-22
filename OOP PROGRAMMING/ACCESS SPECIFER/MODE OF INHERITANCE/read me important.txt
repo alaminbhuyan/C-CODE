@@ -1,0 +1,96 @@
+                                          for inheritance
+For private specifer we can't access properties anywher in the whole program................
+for example:
+-----------
+class A
+{
+	private:
+	     int age;
+	     string name;
+	     float mark;
+        public:
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }	
+};
+
+class B : public A //Do't inherit private member
+{
+	private:
+	     int age;
+	     string name;
+	     float mark;
+        public:
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }	
+};
+
+
+                                         Most important think
+                                --------------------------------------
+Mode of inheritance
+--------------------
+For private mode:
+----------------
+class A
+{
+	public:
+	     int age;
+	     string name;
+	     float mark;
+       
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }	
+};
+class B : private A
+{
+	/*private:
+	     int age;
+	     string name; //Here all members of A class become private..........
+	     float mark;
+        public:
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }*/	
+};
+
+
+For protected mode:
+------------------
+class A
+{
+	public:
+	     int age;
+	     string name;
+	     float mark;
+       
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }	
+};
+class B : protected A
+{
+	/*private:
+	     int age;
+	     string name; //Here all members of A class become protected..........
+	     float mark;
+        public:
+             void display()
+                         {
+                             we can access private member by the method........... 
+
+                         }*/	
+};
+
