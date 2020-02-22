@@ -1,3 +1,4 @@
+// Array even index value
 #include<iostream>
 using namespace std;
 int main()
